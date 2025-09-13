@@ -1,5 +1,15 @@
 * text=auto eol=lf
+# تعامل جميع ملفات Blade على أنها PHP (بدلاً من Blade)
+*.blade.php linguist-language=PHP
 
+# تجاهل ملفات Blade في إحصائيات اللغة (اختياري)
+*.blade.php linguist-documentation=false
+
+# تعيين اللغة الأساسية للمشروع كلغة PHP (إذا كان Laravel API)
+*.php linguist-detectable=true
+
+# يمكنك إضافة أي ملفات أخرى تريد التأكيد على أنها أساسية (مثل JavaScript لـ API)
+*.js linguist-detectable=true
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
